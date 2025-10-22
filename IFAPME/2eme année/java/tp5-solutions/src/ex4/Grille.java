@@ -5,6 +5,8 @@ import java.util.Arrays;
 
 public class Grille {
 
+    // test git
+
     int[] nGagnants = {1,2,5,6,8,9};
     int[] nJoues = new int[6];
     byte compteur = 0;
