@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Héritage</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            line-height: 1.5;
+            color: #333;
+            margin: 0,0,0,10px;
+            padding: 0;
+
+        }
+
+        .intro {
+            font-style: italic;
+            color: blue;
+        }
+
+        .article {
+            padding: 15px;
+            margin-bottom: 10px;
+            color: green;
+            transition: all 0.3s ease-in-out;
+        }
+
+       
+        
+        .article .deux p {
+            color: red
+        }
+
+        .liste {
+            color: blue;
+            font-weight: bold;
+            overflow: visible;
+        }
+
+        .liste li {
+            display: inline-block;
+            margin-right: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .liste li:hover {
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+
+        hr {
+            height: 2px;
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>
+        Mon site web
+    </h1>
+    <p><span class="intro">Votre source d'infos fiable</span></p>
+    <ul class="liste">
+        <li>Accueil</li>
+        <li>A propos</li>
+        <li>Services</li>
+        <li>Contact</li>
+    </ul>
+
+        <hr>
+        
+        <h2>Articles récents</h2>
+        <span class="article-bgjaune">
+        <h3>Article 1</span></h3>
+        <p>Cet article met en lumière un sujet important</p>
+        </span>
+       
+        <span class="article">
+        <h3>Article2</h3>
+        <p>Un autre article qui discute de sujets variés</p>
+        </span>
+        
+        <h2>Commentaires</h2>
+        <ul>
+            <li>Ce commentaire est de l'admin</li>
+            <li>Un commentaire normal de l'utilisateur</li>
+            <li>Encore un autre commentaire d'utilisateur</li>
+        </ul>
+    
+</body>
+
+<footer>
+    <p>(c) 2024 Mon site web. Tous droits reservés.</p>
+</footer>
+</html>

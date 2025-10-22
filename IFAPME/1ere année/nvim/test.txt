@@ -1,0 +1,46 @@
+Better
+Let’s look at how vim could help you to repeat yourself:
+
+. → (dot) will repeat the last command,
+N<command> → will repeat the command N times.
+Some examples, open a file and type:
+
+2dd → will delete 2 lines
+3p → will paste the text 3 times
+100idesu [ESC] → will write “desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu desu”
+. → Just after the last command will write again the 100 “desu”.
+3. → Will write 3 “desu” (and not 300, how clever).
+Stronger
+Knowing how to move efficiently with vim is very important. Don’t skip this section.
+
+NG → Go to line N
+gg → shortcut for 1G - go to the start of the file
+G → Go to last line
+Word moves:
+
+w → go to the start of the following word,
+e → go to the end of this word.
+By default, words are composed of letters and the underscore character. Let’s call a WORD a group of letter separated by blank characters. If you want to consider WORDS, then just use uppercase characters:
+
+W → go to the start of the following WORD,
+E → go to the end of this WORD.
+Word moves example
+Now let’s talk about very efficient moves:
+
+% : Go to the corresponding (, {, [.
+* (resp. #) : go to next (resp. previous) occurrence of the word under the cursor
+Believe me, the last three commands are gold.
+
+Faster
+Remember about the importance of vi moves? Here is the reason. Most commands can be used using the following general format:
+
+<start position><command><end position>
+
+For example : 0y$ means
+
+0 → go to the beginning of this line
+y → yank from here
+$ → up to the end of this line
+We also can do things like ye, yank from here to the end of the word. But also y2/foo yank up to the second occurrence of “foo”.
+
+But what was true for y (yank), is also true for d (delete), v (visual select), gU (uppercase), gu (lowercase), etc…

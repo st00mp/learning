@@ -1,0 +1,129 @@
+### Exercice 1
+
+# IN
+# Nom , vente (chiffre de vente), nbrKM (par employé 50*)
+
+# OUT
+# Nom, prime (par employé 50*)
+
+prime = 0
+
+for 50 times
+    obtenir nom, vente, nbrKM
+        if chiffre de vente > 20 000 e 
+            prime = 10% (0,1) x vente
+            
+            elseif vente > 5000
+                prime = 5% (0,05) x vente
+        
+        if vente > 10 000
+            if nbrKM >= 1000
+                prime += 150
+                
+                elseiff nbrKM > 500
+                    prime += 100
+        
+    Afficher nom et prime
+
+
+### Exercice 2
+
+# IN
+/ (rien)
+
+# OUT
+
+# fahrenheit
+# celsius
+
+
+fahrenheit = [0, 20, 40, 60, ..., 300]
+celsius = 0
+
+    foreach fahrenheit
+        celsius += 5/9 * (1 fahrenheit -32)
+
+print(celsius)
+
+## OU 
+
+f = 0
+for 16 *
+
+c = 5/9 * (1 f -32)
+
+print(f . "=" . c "°C")
+    f += 20
+
+### Exercice 3
+
+# IN
+a,  b
+
+# OUT
+somme
+
+# A créer 
+tmp
+
+
+calculer la somme des nombres pairs compris entre 2 entiers, a et b inclus
+
+
+if a%2 = 1 (impair)
+    tmp ++ (tmp = tmp + tmp)
+
+    somme = 0
+        while (tmp <= b)
+            somme += tmp
+            tmp += 2
+
+    Afficher somme
+
+
+## Exercice 4
+
+Ecrire le diagramme d'actions qui calcule le produit a * b  par additions successives. 
+
+# IN
+a, b
+
+# OUT 
+produit
+
+# A créer
+
+produit = 0
+For b times
+    produit += a
+
+Afficher produit
+
+
+(a creuser)
+#produit = 0
+
+#while a <= b
+#    produit = a++
+
+#else:
+#    print(a)
+
+
+## Exercice 5
+
+# IN
+a, b
+
+# OUT 
+puissance
+
+# A créer
+
+
+produit = 1
+For b times
+    puissance = puissance * a (ou *=a)
+
+Afficher produit
+

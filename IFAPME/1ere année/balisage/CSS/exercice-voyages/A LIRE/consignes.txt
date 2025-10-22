@@ -1,0 +1,26 @@
+Vous ne devez pas déplacer de dossier ou de fichier !
+
+Il n'y a qu'un seul fichier CSS pour tout le site.
+
+Compléter les pages et la feuille de style CSS pour que les liens et images fonctionnent comme les captures ci-dessous le montrent.
+Infos complémentaires
+
+    Vous ne pouvez pas modifier le html sauf pour connecter la feuille de style, modifier les src et les href. PAS de claa, id,...
+
+    commencer par ajouter le chemin de la feuille de style dans chaque fichier HTML. Celle-ci contient seulement une règle qui met le texte en rouge. Tester chaque page, tant que votre page n'a pas de rouge, inutile d'aller plus loin avant d'avoir résolu le problème
+    
+    les éléments image (balise <img>) sont dans le code HTML mais il faut compléter leur attribut src
+    
+    les liens (balise <a>) sont dans le code HTML mais il faut compléter leur attribut href
+    
+    il faut mettre la propriété max-width: 1200px au body, comprenez vous la differentce entre width et max-width?
+    
+    sur chaque page le logo du site doit être un lien vers la page d'accueil du site
+    
+    la police des titres est à spécifier en CSS et le fichier woff est fourni dans l'archive
+    
+    le lien du pied de page vers le site www.needpix.com doit s'ouvrir dans un nouvel onglet du navigateur.
+
+    Soyez super attentif aux majuscules !!!! INTERDICTION de modifier le html ! (menu, figcaption,...)
+
+    Pour la page accueil, deux façons sont proposées. cfr le fichier

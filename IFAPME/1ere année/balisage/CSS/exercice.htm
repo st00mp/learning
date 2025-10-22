@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mot Concave</title>
+    <style>
+        body {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          background-color: #f0f0f0;
+          font-family: Arial, sans-serif;
+        }
+
+        .concave {
+          display: flex;
+        }
+
+        .letter {
+          font-weight: bold;
+          display: inline-block;
+          text-align: center;
+          transition: all 0.3s ease-in-out;
+        }
+
+        .letter.c {
+          font-size: 3.125em;
+          color: #e74c3c; /* rouge */
+        }
+
+        .letter.o {
+          font-size: 3.75em;
+          color: #f39c12; /* orange */
+        }
+
+        .letter.n {
+          font-size: 4.375em;
+          color: #f1c40f; /* jaune */
+        }
+
+        .letter.c2 {
+            font-size: 5em;
+            color: #2ecc71; /* vert */
+        }
+
+        .letter.a {
+          font-size: 4.375em;
+          color: #3498db; /* bleu */
+        }
+
+        .letter.v {
+          font-size: 3.75em;
+          color: #9b59b6; /* violet */
+        }
+
+        .letter.e {
+          font-size: 3.125em;
+          color: #34495e; /* bleu foncé */
+        }
+
+        .letter:hover {
+          transform: scale(1.2);
+          cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="concave">
+        <span class="letter c">C</span>
+        <span class="letter o">O</span>
+        <span class="letter n">N</span>
+        <span class="letter c2">C</span>
+        <span class="letter a">A</span>
+        <span class="letter v">V</span>
+        <span class="letter e">E</span>
+    </div>
+</body>
+</html>

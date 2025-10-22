@@ -1,0 +1,208 @@
+
+# Ex 1
+
+h = "homme"
+f = "femme" 
+c = "celib"  
+m = "marie"  
+
+if h :
+    print("Cher monsieur")
+else : 
+    if c : 
+        print ("Chere demoiselle")
+    else :
+        print ("Chere madame")
+
+# Ex 2
+
+nbr = 7
+
+if nbr > 100 :
+    print("Plus grand")
+
+    if nbr < 100 :
+        print("Plus petit")
+
+    else:
+        print("Egal")
+
+if nbr == 0 :
+    print("Nul")
+
+else:
+    if nbr % 2 == 0 :
+        print("Pair")
+    else: 
+        print("Impair")
+
+# Ex 3
+
+m = 409 
+cliName = De
+
+if m >= 500
+    remise = 0.05 * m 
+
+else 
+    if m > 400
+    remise = 0.03 * m
+
+print(cliName , m "euros", remise "euros")
+
+
+# Ex 4 
+
+Exercice 6. 
+
+Obtenir NbrUn et NbrDeux
+
+Si Nbr < 0 oux Nb2 < 0
+
+Alors afficher “Chiffre négatif”
+
+cf. tables de vérité (xor)
+
+Exercice 8. 
+
+Sachant que l’ont introduit deux valeurs VarA et VarB, écrire le diagramme d’action qui permute le contenu de ces variables.
+
+Obtenir VarA et VarB
+
+VarTmp = VarA  
+
+VarB = VarTmp
+
+VarTmp = VarB 
+
+VarB = VarTmp 
+
+plus opti : 
+
+VarTmp = VarA
+
+VarA = VarB
+
+VarB = VarTmp
+
+Exercice 8. 
+
+Obtenir : 
+
+- Nbr articles achetés
+- Montant total d’achat
+- Ristourne 20%
+- Ristourne 5%
+
+Si min 1 achat alors 20% reduction
+
+Si achat et montant > 100 €, alors 5% de remise supplémentaire
+
+Si min 4 articles, alors 3% de remise supplémentaire
+
+IN :
+
+- NbArticles
+- Montant_achat
+
+OUT:  
+
+- Montant_a_payer
+
+Prix_reduc = 0.20 
+
+    montant_achat_reducUn = Montant_achat - (Montant_achat * 0.20)
+
+    Si montant_achat_reducUn > 100€ 
+
+        alors montant_achat_reducUn = montant_achat_reducUn - (montant_achat_reducUn * 0.05)
+    
+
+Exercice 9 
+
+IN 
+
+- HeureIn HHMM
+
+
+
+
+if HHMM < 0
+    print("Nombre négatif")
+
+else:
+    HH = Int(HHMM/100)
+    MM = HHMM%100
+
+    if: HH >= 24 and MM >= 60
+        print("HH et MM non valide)
+
+    else:
+
+        if HH >= 24
+            print("Nombre d'heure non valide")
+
+        if:
+            if MM >= 60
+                print("Nombre de minutes non valide")
+
+            else: 
+                print("Nombre de minutes et nombre d'heures non valide)
+
+
+
+
+Exercice 10 
+
+IN 
+
+- nom
+- nbrJours
+- estVip
+
+A créer : 
+/
+
+OUT : 
+txt (action)
+
+
+Obtenir nom, nbrJours, estVip (est un bon client) 
+
+if nbrJours > 90
+    if estVip = TRUE
+        print("Lettre)
+    else
+        print("Recours Justice")
+
+    elseif: 
+        nbrJours > 60
+            print("Lettre")
+    elseif: nbrJours > 30 
+        print("Tel")
+    
+    else: 
+        print("aucun")
+
+
+Exercice 11 
+
+IN 
+
+- remun
+- menage1 (Ménage à 1 revenu ou isolé)
+- menage2 (Ménage à 2 revenus)
+
+if remun > 6028,65
+    andif 
+        menage1
+        
+
+
+
+
+
+
+
+    
+

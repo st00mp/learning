@@ -1,0 +1,15 @@
+.carre {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border: 1px solid;
+    
+}
+
+.bleu {
+    background-color: blue;
+}
+
+div {
+    display: inline-block;
+}

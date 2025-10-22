@@ -1,0 +1,150 @@
+### Exercice 6
+
+# IN
+
+CA en cours
+
+# OUT
+Num Mois
+CA
+Diff
+
+# TO CREATE
+Mois (1->12)
+Ecart
+CA précédent
+
+__
+
+For (i=1; 12; i++)
+    Obtenir CA
+    Afficher i, CA
+    Si (i =/= 1)
+        Afficher CA - CA_prev
+    CA_prev = CA
+
+__
+
+A retenir = Anticiper à l'avance que l'ont aura besoin avec CA_prev pour pouvoir calculer nouveau CA
+
+
+
+### Exercice 7
+
+# IN
+nbrOuvriers (-> n'est pas une "variable")
+nom
+nbrHeures
+txHorraire
+anciennete
+lieu
+nbrEnfants
+___
+Par ouvrier * 100
+
+# OUT
+nom
+salaire
+prime
+___
+Par ouvrier * 100 -> totalAPayer
+
+# TO CREATE 
+salaire
+prime
+totalAPayer
+__
+
+totalAPayer = 0
+
+For (i=1; 100; i++)
+    Obtenir nom, nbrHeures, txHorraire, anciennete, lieu, nbrEnfants
+    prime = 0
+    primeEnfant = 0
+
+    salaire = nbrHeures * txHorraire
+    if nbrHeures > 36
+        salaire += (nbrHeures -36) * txHorraire * 0,4 
+    end if
+
+    if anciennete > 6
+        prime += 6*8 + (12 * (anciennete-6))
+    else
+        prime += (8 * anciennete)
+    end if
+
+    if lieu == 2
+        prime += 250
+    if lieu == 1
+        prime += 125
+    if lieu == 0
+        prime += 0
+
+    if nbrEnfants > 3
+        primeEnfant += 3*20 + (24 * (nbrEnfants - 3))
+    else
+        primeEnfant += (20 * nbrEnfants)
+    end if
+
+    if primeEnfant > 140
+        primeEnfant = 140
+
+    prime += primeEnfant
+    
+    Afficher nom, salaire, prime   
+
+    totalAPayer += (salaire + prime)
+
+Afficher totalAPayer
+
+
+### Exercice 9
+
+# IN
+nom
+message
+--
+Par membre -> * ? 
+
+# OUT
+PrcAncien (Prc = pourcentage)
+PrcNouveau
+
+# To CREATE
+nbClients
+info
+ancienMembre
+nbrMembres
+
+
+___
+
+INIT
+ancienMembre = 0
+(newMembre = 0)
+nbrMembres = 0
+
+
+obtenir nom
+
+while nom != "FIN"
+
+obtenir message
+
+if message = "ancien"
+    ancienMembre ++ (+= 1) 
+nbrMembres ++
+
+obtenir nom
+
+
+PrcAncien = (ancienMembre / nbrMembres) * 100
+PrcNouveau = 100 - PrcAncien
+
+Afficher PrcAncien, PrcNouveau
+
+
+
+
+    
+
