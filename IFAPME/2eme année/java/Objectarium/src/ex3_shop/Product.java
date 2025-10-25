@@ -1,8 +1,8 @@
 package ex3_shop;
 
 public class Product {
-    private String name;
-    private float price;
+    private final String name;
+    private final float price;
 
     public Product (String name, float price){
         this.name = name;
@@ -18,7 +18,7 @@ public class Product {
     }
 
     @Override
-    public String toString(){
-        return
+    public String toString() {
+        return name + ": " + price + "€";
     }
 }
