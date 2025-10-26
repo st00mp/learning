@@ -67,7 +67,6 @@ public class Main {
 
         vincent.removeFromCart("Logitech MX4");
 
-        vincent.checkOut();
 
     }
 }
