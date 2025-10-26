@@ -69,8 +69,5 @@ public class Main {
 
         vincent.checkOut();
 
-
-
-
     }
 }
