@@ -13,17 +13,17 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         // ex1
-//        {Account a1 = new Account("Vincent", 5000f);
-//        Account a2 = new Account("Isabelle", 22000f);
-//
-//        Bank b1 = new Bank("Belfius");
-//
-//        b1.transfer(a1, a2, 1000f);
-//        b1.transfer(a1, a2, 6000f);
-//
-//        System.out.println("Final balances:");
-//        System.out.println(a1.getBalance());
-//        System.out.println(a2.getBalance());}
+        {Account a1 = new Account("Vincent", 5000f);
+        Account a2 = new Account("Isabelle", 22000f);
+
+        Bank b1 = new Bank("Belfius");
+
+        b1.transfer(a1, a2, 1000f);
+        b1.transfer(a1, a2, 6000f);
+
+        System.out.println("Final balances:");
+        System.out.println(a1.getBalance());
+        System.out.println(a2.getBalance());}
 
         //ex2
 
@@ -54,18 +54,18 @@ public class Main {
 //
 //        System.out.println("The average grades of the school is " + s1.calculateSchoolAverage() + "/20");
 
-        Product clavier = new Product("Logitech MX S", 99.99f);
-        System.out.println(clavier);
-        Product souris = new Product("Logitech MX4", 129.99f);
-        System.out.println(souris);
-
-        Client vincent = new Client("Vincent");
-        vincent.addToCart(clavier);
-        vincent.addToCart(souris);
-
-        vincent.checkOut();
-
-        vincent.removeFromCart("Logitech MX4");
+//        Product clavier = new Product("Logitech MX S", 99.99f);
+//        System.out.println(clavier);
+//        Product souris = new Product("Logitech MX4", 129.99f);
+//        System.out.println(souris);
+//
+//        Client vincent = new Client("Vincent");
+//        vincent.addToCart(clavier);
+//        vincent.addToCart(souris);
+//
+//        vincent.checkOut();
+//
+//        vincent.removeFromCart("Logitech MX4");
 
 
     }

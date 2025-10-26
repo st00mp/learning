@@ -1,6 +1,8 @@
 package followers;
 
-public class Follower {
+import interfaces.Displayable;
+
+public class Follower implements Displayable {
     private String name;
     private int age;
 

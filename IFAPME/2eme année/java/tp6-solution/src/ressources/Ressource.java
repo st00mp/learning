@@ -1,6 +1,8 @@
 package ressources;
 
-public class Ressource {
+import interfaces.Displayable;
+
+public class Ressource implements Displayable {
     private String title;
     private String author;
 
