@@ -11,6 +11,6 @@ public class Main {
         notificationService.addUser(isabelle);
         notificationService.addUser(tom);
 
-        notificationService.notifyAll("Alerteeeeee généraleeee");
+        notificationService.notifyAllUsers("Alerteeeeee généraleeee");
     }
 }

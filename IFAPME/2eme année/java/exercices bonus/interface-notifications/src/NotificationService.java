@@ -8,7 +8,7 @@ public class NotificationService {
         users.add(user);
     }
 
-    public void notifyAll(String message){
+    public void notifyAllUsers(String message){
         for (User user : users){
             user.notify(message);
         }
