@@ -1,4 +1,5 @@
-package PACKAGE_NAME;
-
-public class EmailNotifier {
+public class EmailNotifier implements Notifier {
+    public void send(String message){
+        System.out.println("Email envoyé " + message);
+    }
 }
