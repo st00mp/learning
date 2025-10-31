@@ -22,7 +22,7 @@ public class Main {
         Dico test2Ex2 = new Dico(tabFr, tabAngl);
         System.out.println(testEx2.tradFr("house"));
         System.out.println(testEx2.tradAngl("chien"));
-        test2Ex2.addWord("bananne", "banana");
+        test2Ex2.addWord("banane", "banana");
         test2Ex2.showList();
 
 
