@@ -26,9 +26,4 @@ public class Livre {
     public Livre clone(){
         return new Livre(this.isbn, this.titre, this.edition);
     }
-
-
-
-
-
 }
