@@ -5,7 +5,6 @@ import java.util.ArrayList;
 public class Tuile {
 
     private char lettre;
-
     private int points;
 
     public Tuile(char lettre, int points){
@@ -21,7 +20,5 @@ public class Tuile {
         return points;
     }
 
-    public ArrayList<Tuile> genererLettres(){
 
-    }
 }
