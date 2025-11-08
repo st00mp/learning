@@ -1,28 +1,47 @@
-import ex1.Banque;
-import ex1.Compte;
+import model.Compte;
+import model.CompteCourant;
+import model.CompteEpargne;
+import service.Banque;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
 
-        Banque b1 = new Banque();
-        Compte c1 = new Compte("BE321", 1000);
-        Compte c2 = new Compte("BE343", 500);
-        Compte c3 = new Compte("BE987", 2000);
-        Compte c4 = new Compte();
+        // 🏦 Création de la banque
+        Banque banque = new Banque();
 
-        b1.ajouterCompte(c1);
-        b1.ajouterCompte(c2);
-        b1.ajouterCompte(c3);
+        // 👤 Création de différents comptes (polymorphisme)
+        CompteCourant cc1 = new CompteCourant("BE1001", 500, 200);  // solde 500, découvert 200
+        CompteEpargne ce1 = new CompteEpargne("BE2002", 1000, 0.02); // 2% d’intérêt
 
-        System.out.println(b1.afficherTous());
+        // ➕ Ajout des comptes à la banque
+        banque.ajouterCompte(cc1);
+        banque.ajouterCompte(ce1);
 
-        System.out.println(b1.trouverCompte("BE987"));
+        // 📋 Affichage initial
+        System.out.println("=== Comptes initiaux ===");
+        banque.afficherTous();
 
-        b1.transferer(c3, c2, 500);
-        System.out.println(c2);
+        // 💸 Débits et crédits
+        System.out.println("\n=== Tests de débit/crédit ===");
+        cc1.debiter(600);  // autorisé grâce au découvert
+        cc1.debiter(200);  // dépasse le découvert
+        ce1.debiter(200);  // débit normal (pas de découvert)
 
-        System.out.println(c1.equals(c1)?"Meme compte": "Compte différent");
-    }
+        cc1.crediter(150);
+        ce1.crediter(100);
+
+        // 🔁 Transfert entre comptes
+        System.out.println("\n=== Transfert ===");
+        banque.transferer(ce1, cc1, 250); // transfert depuis épargne vers courant
+
+        // 📊 Calcul des intérêts
+        System.out.println("\n=== Calcul des intérêts ===");
+        System.out.println("Intérêts compte courant : " + cc1.calculInteret() + " €");
+        System.out.println("Intérêts compte épargne  : " + ce1.calculInteret() + " €");
+
+        // 🧾 Affichage final
+        System.out.println("\n=== Comptes après opérations ===");
+        banque.afficherTous();
+
+        }
 }

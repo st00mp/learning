@@ -1,4 +1,6 @@
-package ex1;
+package service;
+
+import model.Compte;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,9 +16,12 @@ public class Banque {
         comptes.add(compte);
     }
 
-    public List<Compte> afficherTous() {
-        return comptes;
+    public void afficherTous() {
+        for (Compte c : comptes) {
+            System.out.println(c);
+        }
     }
+
 
     public Compte trouverCompte(String numero) {
         for (Compte compte : comptes) {
@@ -28,7 +33,7 @@ public class Banque {
     }
 
     public void transferer(Compte source, Compte cible, double montant) {
-        if (source.getSolde() > montant) {
+        if (source.getSolde() >= montant) {
             source.debiter(montant);
             cible.crediter(montant);
             System.out.println("✅ Transfert de " + montant + " € de " + source.getNumero() + " vers " + cible.getNumero());
@@ -36,4 +41,5 @@ public class Banque {
             System.out.println("Transfert impossible, fonds insuffisants");
         }
     }
+
 }

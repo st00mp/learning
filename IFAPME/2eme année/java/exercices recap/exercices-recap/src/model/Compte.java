@@ -1,8 +1,8 @@
-package ex1;
+package model;
 
 public class Compte {
-    private String numero;
-    private double solde;
+    protected String numero;
+    protected double solde;
 
     public Compte(String numero, double solde){
         this.numero = numero;
@@ -39,6 +39,11 @@ public class Compte {
             System.out.println("Solde insuffisant pour débiter " + montant + " €.");
         }
     }
+
+    public double calculInteret() {
+        return 0.0;
+    }
+
 
     @Override
     public String toString(){
