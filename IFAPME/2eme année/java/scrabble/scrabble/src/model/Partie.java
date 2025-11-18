@@ -1,9 +1,4 @@
-package service;
-
-import model.Joueur;
-import model.Plateau;
-import model.Sac;
-import model.Tuile;
+package model;
 
 import java.util.List;
 
