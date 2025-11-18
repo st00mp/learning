@@ -19,5 +19,13 @@ public class Chevalet {
         this.tuiles = tuiles;
     }
 
-    // afficherTuiles(){}
+    public void afficherTuiles() {
+    System.out.println("\n─── Chevalet ─────────────────────────");
+
+    for (Tuile tuile : tuiles) {
+        System.out.print("[ " + tuile.getLettre() + " | " + tuile.getPoints() + " ] ");
+    }
+
+    System.out.println("\n──────────────────────────────────────\n");
+    }
 }

@@ -24,5 +24,8 @@ public class Partie {
         joueur.getChevalet().setTuiles(tuilesPiochees);
     }
 
+    public void afficherChevalet(){
+        joueur.getChevalet().afficherTuiles();
+    }
 
 }

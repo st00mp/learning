@@ -7,6 +7,7 @@ public class Main {
 
         Partie start = new Partie();
         start.distribuerTuilesInitiales();
+        start.afficherChevalet();
 
 // Raisonnement :
 // Le joueur demande à placer le mot, mais le model.Plateau exécute le placement.
