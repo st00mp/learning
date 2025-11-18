@@ -20,12 +20,12 @@ public class Chevalet {
     }
 
     public void afficherTuiles() {
-    System.out.println("\n─── Chevalet ─────────────────────────");
+    System.out.println("\n─── Chevalet ────────────────────────────────────────────────────────");
 
     for (Tuile tuile : tuiles) {
         System.out.print("[ " + tuile.getLettre() + " | " + tuile.getPoints() + " ] ");
     }
 
-    System.out.println("\n──────────────────────────────────────\n");
+    System.out.println("\n─────────────────────────────────────────────────────────────────────\n");
     }
 }

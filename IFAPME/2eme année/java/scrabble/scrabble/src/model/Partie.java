@@ -19,6 +19,14 @@ public class Partie {
         return joueur;
     }
 
+    public Plateau getPlateau() {
+        return plateau;
+    }
+
+    public Sac getSac() {
+        return sac;
+    }
+
     public void distribuerTuilesInitiales(){
         List<Tuile> tuilesPiochees = sac.piocher();
         joueur.getChevalet().setTuiles(tuilesPiochees);
