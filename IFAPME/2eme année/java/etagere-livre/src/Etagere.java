@@ -23,7 +23,7 @@ public class Etagere {
 
     public void ajouterLivre(Livre livre) throws Exception {
             if (estPleine()){
-                throw new Exception("Impossible d'ajouter, étagère pleine");
+                throw new EtagerePleineException("Impossible d'ajouter, étagère pleine");
             }
             livres[nbLivres] = livre;
             System.out.println("Livre ajouté à la position numéro " + (nbLivres));
