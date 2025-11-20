@@ -21,7 +21,7 @@ public class Etagere {
         return compterLivres() >= capacite;
     }
 
-    public void ajouterLivre(Livre livre) throws Exception {
+    public void ajouterLivre(Livre livre) throws EtagerePleineException {
             if (estPleine()){
                 throw new Exception("Impossible d'ajouter, étagère pleine");
             }
